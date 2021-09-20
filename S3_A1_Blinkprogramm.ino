@@ -26,5 +26,4 @@ void loop() { //Aller Code, der in einem Loop wiederholt wird.
   digitalWrite(LED2, HIGH); //Port 12 bekommt Strom, 5V (LED2 steht nur für Port 12 wegen unserer Variable)
   delay(delayMS);  //Warte 1000ms
   digitalWrite(LED2, LOW); //Port 13 bekommt keinen Strom, 0V (LED steht nur für Port 13 wegen unserer Variable)
-  
 }
