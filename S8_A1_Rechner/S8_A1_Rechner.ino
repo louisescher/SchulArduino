@@ -11,19 +11,20 @@ int delayMS = 1000;
 
 void setup() {
   Serial.begin(9600); // Kommunikationsrate mit Arduino
-  Serial.print("Zahl 1 (a): "); // Print vom Ergebnis der Rechnung (Variable X)
-  Serial.println(a); // Print vom Ergebnis der Rechnung (Variable X)
+  
+  Serial.print("Zahl 1 (a): "); // String
+  Serial.println(a); // einfügen der Variable "a"
   delay(delayMS);
-  Serial.print("Zahl 2 (b): "); // Print vom Ergebnis der Rechnung (Variable X)
-  Serial.println(b); // Print vom Ergebnis der Rechnung (Variable X)
+  Serial.print("Zahl 2 (b): "); // String
+  Serial.println(b); // einfügen der Variable "b"
   delay(delayMS);
-  Serial.print("Rechne "); // Print vom Ergebnis der Rechnung (Variable X)
-  Serial.println(a); // Print vom Ergebnis der Rechnung (Variable X)
-  Serial.println(" und "); // Print vom Ergebnis der Rechnung (Variable X)
-  Serial.println(b); // Print vom Ergebnis der Rechnung (Variable X)
-  Serial.println(" zusammen."); // Print vom Ergebnis der Rechnung (Variable X)
+  Serial.print("Rechne "); // String
+  Serial.println(a); // einfügen der Variable "a"
+  Serial.println(" und "); // String
+  Serial.println(b); // einfügen der Variable "b"
+  Serial.println(" zusammen."); // String
   delay(delayMS);
-  Serial.print("Ergebnis: "); // Print vom Ergebnis der Rechnung (Variable X)
+  Serial.print("Ergebnis: "); // String
   Serial.println(X); // Print vom Ergebnis der Rechnung (Variable X)
   delay(delayMS);
 }
