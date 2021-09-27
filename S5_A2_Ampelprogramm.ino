@@ -23,15 +23,16 @@ void setup() {
 
 void loop() {
   digitalWrite(ledRED, HIGH);
-  delay(2500);
+  delay(3000); // Warten auf Gelbe LED
+  digitalWrite(ledYELLOW, HIGH);
+  delay(1000); // Warten während beide LEDs an sind
   digitalWrite(ledRED, LOW);
-  digitalWrite(ledYELLOW, HIGH); 
-  delay(750); 
   digitalWrite(ledYELLOW, LOW); 
+  //Rot und Gelb aus, Grün an
   digitalWrite(ledGREEN, HIGH); 
-  delay(2000);  
+  delay(2500);  // Warten für Grün
   digitalWrite(ledGREEN, LOW); 
   digitalWrite(ledYELLOW, HIGH); 
-  delay(1000); 
+  delay(1000); // Warten für Gelb
   digitalWrite(ledYELLOW, LOW); 
 }
