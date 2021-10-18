@@ -8,8 +8,6 @@
 //Deklarationsbereich
 
 int buttonPin = 2;
-
-int buttonPushCounter = 0;
 int buttonState = 0;
 
 int carRED = 13;  
@@ -36,9 +34,9 @@ void setup() {
 
 void loop() {
   buttonState = digitalRead(buttonPin);
+  Serial.println(buttonState);
 
   if (buttonState == HIGH) {
-      buttonPushCounter++;
       Serial.println("Ein Fussgaenger hat den Knopf gedrueckt!");
       digitalWrite(carGREEN, LOW);
       digitalWrite(carYELLOW, HIGH); 
@@ -56,7 +54,8 @@ void loop() {
       delay(1000);
       digitalWrite(carRED, LOW);
       digitalWrite(carYELLOW, LOW); 
-      digitalWrite(carGREEN, HIGH); 
+      digitalWrite(carGREEN, HIGH);
+      delay(1000);
   } else {
     delay(50);
   }
