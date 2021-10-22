@@ -1,0 +1,5 @@
+Startbutton drücken = Timer startet
+  Während Timer läuft macht Startbutton nichts
+
+Pausebutton drücken = Timer pausiert, macht aber nichts wenn Timer nicht läuft
+  Startbutton drücken, während Timer pausiert ist = Timer reset
