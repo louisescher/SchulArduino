@@ -32,13 +32,6 @@ void loop() {
   buttonState_stopstart = digitalRead(StartTimerButton);                            //Read Start/Stop Button
   buttonState_pause = digitalRead(PauseTimerButton);                                // Read Pause Button
 
-  if(isTimerRunning == true) {                                                      // Check if Timer is running, if yes, add a Second to the timer
-    Timer++;
-  } 
-  if(isTimerPaused == true) {                                                       // If the Timer is Paused, do nothing
-    //Nothing here
-  }
-
   if (buttonState_stopstart == HIGH) {                                              // If the Stop/start Button gets pressed...
       if(isTimerRunning == false) {                                                 // If the Timer is NOT running...
         if(isTimerPaused == false) {                                                // AND if the Timer is NOT paused
@@ -71,6 +64,13 @@ void loop() {
       }
   } else {
     // Do nothing
+  }
+
+  if(isTimerRunning == true) {                                                      // Check if Timer is running, if yes, add a Second to the timer
+    Timer++;
+  } 
+  if(isTimerPaused == true) {                                                       // If the Timer is Paused, do nothing
+    //Nothing here
   }
   
    lcd.print(TimerStateString);                                                     // Print in the First Line 
