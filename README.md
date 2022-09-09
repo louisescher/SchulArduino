@@ -1,4 +1,4 @@
-# 10c Arduino Repository
+# Klasse 10 Arduino Repository
 
 Hallo Klasse 10c! <br>
 Auf diesem Repo findet ihr alle Codes aus dem NWT Unterricht. <br>
